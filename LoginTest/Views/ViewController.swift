@@ -64,10 +64,7 @@ extension ViewController: LoginDelegate {
         self.passwordTextField.text = password
     }
     
-    func isValidUser(_ cpf: String,_ password: String) {
-        let isValidCPF = presenter.validateCPF(cpf)
-        let isValidPassword = presenter.validatePassword(password)
-        
-        loginButton.isEnabled = isValidCPF && isValidPassword
+    func isValidUser(_ isValid: Bool) {
+        loginButton.isEnabled = isValid
     }
 }
