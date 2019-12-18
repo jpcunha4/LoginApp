@@ -6,7 +6,7 @@
 //  Copyright © 2019 Joao Paulo Cunha Ávila. All rights reserved.
 //
 
-class LoginInteractor {
+class Validator {
     
     func validateCPF(_ cpf: String) -> Bool {
         for x in 0..<10 {

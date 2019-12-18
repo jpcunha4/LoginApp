@@ -16,7 +16,7 @@ class LoginPresenter {
     
     var user = User()
     var delegate: LoginDelegate?
-    var interactor = LoginInteractor()
+    var interactor = Validator()
     
     // MARK: Updates
     

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
     // MARK: IBOutlets
     @IBOutlet weak var cpfTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
 }
 
 // MARK: TextFieldDelegate
-extension ViewController: UITextFieldDelegate {
+extension LoginViewController: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         let isDeleteButton = string.count == 0 && range.length > 0
@@ -55,7 +55,7 @@ extension ViewController: UITextFieldDelegate {
 }
 
 // MARK: LoginDelegate
-extension ViewController: LoginDelegate {
+extension LoginViewController: LoginDelegate {
     func updateCPF(_ cpf: String) {
         self.cpfTextField.text = cpf
     }

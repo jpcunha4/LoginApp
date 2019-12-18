@@ -9,6 +9,7 @@
 import UIKit
 
 class User: NSObject {
+    var nickname: String = ""
     var cpf: String = ""
     var password: String = ""
     
